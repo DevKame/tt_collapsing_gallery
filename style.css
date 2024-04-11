@@ -1,0 +1,23 @@
+
+
+#wrapper {
+    display: flex;
+}
+.item {
+    flex: 1;
+    background-size: cover;
+    transition: all .6s ease;
+    opacity: .3;
+    overflow: hidden;
+}
+.item * {
+    opacity: 0;
+    transition: opacity .6s ease-in;
+}
+.item:hover {
+    flex: 10;
+    opacity: 1;
+}
+.item:hover * {
+    opacity: 1;
+}
